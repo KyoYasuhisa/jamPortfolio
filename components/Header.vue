@@ -11,19 +11,19 @@
       <div class="flex justify-around mt-5 text-xs">
         <nuxt-link to="/">
           <button>
-            <fa icon="code" size="2x" class="block mx-auto mb-1" />
+            <fa :icon="faCode" size="2x" class="block mx-auto mb-1" />
             Works
           </button>
         </nuxt-link>
         <a href="http://" target="_blank" rel="noopener noreferrer">
           <button>
-            <fa :icon="['fab','twitter']" size="2x" class="block mx-auto mb-1" />
+            <fa :icon="faTwitter" size="2x" class="block mx-auto mb-1" />
             Twitter
           </button>
         </a>
         <a href="https://github.com/si-zerodarkthirty" target="_blank" rel="noopener noreferrer">
           <button>
-            <fa :icon="['fab','github']" size="2x" class="block mx-auto mb-1" />
+            <fa :icon="faGithub" size="2x" class="block mx-auto mb-1" />
             GitHub
           </button>
         </a>
@@ -34,10 +34,24 @@
 </template>
 
 <script>
+import { faTwitter } from '@fortawesome/free-brands-svg-icons'
+import { faGithub } from '@fortawesome/free-brands-svg-icons'
+import { faCode } from '@fortawesome/free-solid-svg-icons'
 export default {
   data() {
     return {
       keyword: ''
+    }
+  },
+  computed: {
+    faTwitter () {
+      return faTwitter
+    },
+    faGithub () {
+      return faGithub
+    },
+    faCode () {
+      return faCode
     }
   }
 }
