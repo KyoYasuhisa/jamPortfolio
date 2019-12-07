@@ -53,16 +53,25 @@ export default {
   modules: [
     '@nuxtjs/pwa',
     '@nuxtjs/markdownit',
-    'nuxt-fontawesome'
+    ['nuxt-fontawesome', {
+      component: 'fa',
+      imports: [
+        {
+          set: '@fortawesome/free-brands-svg-icons',
+          icons: ['fab']
+        },
+        {
+          set: '@fortawesome/free-solid-svg-icons',
+          icons: ['fas']
+        }
+      ]
+    }]
   ],
   markdownit: { 
     html: true,
     injected: true,
     linkify: true,
     breaks: false
-  },
-  fontawesome: {
-    component: 'fa'
   },
   generate: {
     routes () {
