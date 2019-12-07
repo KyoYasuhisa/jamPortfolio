@@ -18,11 +18,15 @@
     </div>
     <div class="my-10">
       <p v-if="work.fields.url" class="text-xs">
-        <fa icon="link" class="mr-1" />
+        <fa-layers full-width class="mr-1">
+          <fa :icon="faLink" />
+        </fa-layers>
         {{ work.fields.url }}
       </p>
       <p v-if="work.fields.gitHub" class="text-xs">
-        <fa :icon="['fab','github']" class="mr-1" />
+        <fa-layers full-width class="mr-1">
+          <fa :icon="faGithub" />
+        </fa-layers>
         {{ work.fields.gitHub }}
       </p>
     </div>
@@ -31,6 +35,7 @@
 </template>
 
 <script>
+import { faLink } from '@fortawesome/free-solid-svg-icons'
 import { createClient } from '~/plugins/contentful.js'
 const client = createClient()
 export default { 
@@ -45,6 +50,11 @@ export default {
         work: works.items[0]
       }
     }).catch(console.error)
+  },
+  computed: {
+    faLink () {
+      return faLink
+    }
   }
 }
 </script>
