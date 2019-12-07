@@ -36,6 +36,7 @@
 
 <script>
 import { faLink } from '@fortawesome/free-solid-svg-icons'
+import { faGithub } from '@fortawesome/free-brands-svg-icons'
 import { createClient } from '~/plugins/contentful.js'
 const client = createClient()
 export default { 
@@ -54,6 +55,9 @@ export default {
   computed: {
     faLink () {
       return faLink
+    },
+    faGithub () {
+      return faGithub
     }
   }
 }
