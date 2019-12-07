@@ -11,19 +11,25 @@
       <div class="flex justify-around mt-5 text-xs">
         <nuxt-link to="/">
           <button>
-            <fa :icon="faCode" size="2x" class="block mx-auto mb-1" />
+            <fa-layers full-width class="fa-2x block mx-auto mb-1">
+              <fa :icon="faCode" />
+            </fa-layers>
             Works
           </button>
         </nuxt-link>
         <a href="http://" target="_blank" rel="noopener noreferrer">
           <button>
-            <fa :icon="faTwitter" size="2x" class="block mx-auto mb-1" />
+            <fa-layers full-width class="fa-2x block mx-auto mb-1">
+              <fa :icon="faTwitter" />
+            </fa-layers>
             Twitter
           </button>
         </a>
         <a href="https://github.com/si-zerodarkthirty" target="_blank" rel="noopener noreferrer">
           <button>
-            <fa :icon="faGithub" size="2x" class="block mx-auto mb-1" />
+            <fa-layers full-width class="fa-2x block mx-auto mb-1">
+              <fa :icon="faGithub" />
+            </fa-layers>
             GitHub
           </button>
         </a>
