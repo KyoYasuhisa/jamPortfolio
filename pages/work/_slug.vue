@@ -86,4 +86,7 @@ export default {
   color: #fff;
   padding: 5px;
 }
+.content img {
+  width: 100%;
+}
 </style>
