@@ -1,0 +1,29 @@
+{
+  "name": "jamPortfolio",
+  "version": "1.0.0",
+  "description": "My first-class Nuxt.js project",
+  "author": "si-zerodarkthirty",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.25",
+    "@fortawesome/free-brands-svg-icons": "^5.11.2",
+    "@fortawesome/free-solid-svg-icons": "^5.11.2",
+    "@nuxtjs/markdownit": "^1.2.7",
+    "@nuxtjs/pwa": "^3.0.0-0",
+    "markdown-it": "^10.0.0",
+    "nuxt": "^2.0.0",
+    "nuxt-fontawesome": "^0.4.0"
+  },
+  "devDependencies": {
+    "@nuxtjs/tailwindcss": "^1.0.0",
+    "eslint-config-prettier": "^4.1.0",
+    "eslint-plugin-prettier": "^3.0.1",
+    "prettier": "^1.16.4"
+  }
+}
