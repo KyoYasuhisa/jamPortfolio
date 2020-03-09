@@ -80,11 +80,15 @@ export default {
           'content_type': 'work'
         }),
         client.getEntries({
+          'content_type': 'category'
+        }),
+        client.getEntries({
           'content_type': 'tag'
         })
-      ]).then(([works,tags]) => {
+      ]).then(([works,categories,tags]) => {
         return [
           ...works.items.map(work => `work/${work.fields.slug}`),
+          ...categories.items.map(category => `category/${category.fields.slug}`),
           ...tags.items.map(tag => `tag/${tag.sys.id}`)
         ]
       })
