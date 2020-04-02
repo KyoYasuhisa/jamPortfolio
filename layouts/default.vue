@@ -1,7 +1,7 @@
 <template>
   <div class="font-main flex flex-wrap justify-around">
     <Header />
-    <main class="mt-10 p-2">
+    <main class="w-full mt-10 p-2">
       <nuxt />
     </main>
   </div>
@@ -18,7 +18,7 @@ export default {
 
 <style>
 main {
-  width: 550px;
+  max-width: 550px;
 }
 .photo {
   min-width: 4rem; 
