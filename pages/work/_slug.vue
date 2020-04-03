@@ -43,7 +43,7 @@ import { faGithub } from '@fortawesome/free-brands-svg-icons'
 import { createClient } from '~/plugins/contentful.js'
 const client = createClient()
 export default { 
-  asyncData(params) {
+  asyncData({params}) {
     return Promise.all([
       client.getEntries({
         'content_type': 'work',

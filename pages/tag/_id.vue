@@ -16,7 +16,7 @@ export default {
   components: {
     Item
   },
-  asyncData ({env,params}) {
+  asyncData ({params}) {
     return Promise.all([
       client.getEntries({
         'content_type': 'work',
